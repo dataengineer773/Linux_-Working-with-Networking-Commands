@@ -1,0 +1,35 @@
+#  Working with Networking Commands:
+ # Display your system's hostname and IP address:
+ hostname
+
+ # An IP address (Internet Protocol address) is a numerical label assigned to each device connected to a computer network that uses the # Internet Protocol for communication.
+# You can use the -i option to view the IP address of the host:
+hostname -i
+
+# Display network interface configuration :
+# To display the configuration of all network interfaces of your system, enter:
+ifconfig
+
+# To display the configuration of a particular device, such as the ethernet adapter eth0, enter:
+ifconfig eth0
+
+#  Test network connectivity:
+ping www.google.com
+
+# If you want to ping only a limited number of times, use -c option.
+ping -c 5 www.google.com
+
+# View or download data from a server:
+# Transfer data from a server
+curl https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0250EN-SkillsNetwork/labs/Bash%20Scripting/usdoi.txt
+
+# To access the file at the given URL and also save it in your current working directory, use the -O option:
+curl -O https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0250EN-SkillsNetwork/labs/Bash%20Scripting/usdoi.txt
+
+# Download file(s) from a URL:
+# To see wget in action, first remove usdoi.txt from your current directory:
+rm usdoi.txt
+
+# then download it again using wget as follows:
+wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0250EN-SkillsNetwork/labs/Bash%20Scripting/usdoi.txt
+
